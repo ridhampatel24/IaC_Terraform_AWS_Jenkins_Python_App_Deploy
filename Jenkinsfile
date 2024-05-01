@@ -15,7 +15,7 @@ pipeline {
 
                 // Clone the Git repository
                 git branch: 'main',
-                    url: 'https://github.com/rahulwagh/devops-project-1.git'
+                    url: 'https://github.com/ridhampatel24/IaC_Terraform_AWS_Jenkins_Python_App_Deploy.git'
 
                 sh "ls -lart"
             }
