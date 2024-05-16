@@ -1,5 +1,5 @@
-output "dev_proj_1_vpc_id" {
-  value = module.networking.dev_proj_1_vpc_id
+output "public_ip" {
+  value = module.ec2.dev_proj_1_ec2_instance_ip
 }
 
 /*output "ec2_ssh_string" {
