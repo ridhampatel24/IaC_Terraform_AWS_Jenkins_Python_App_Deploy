@@ -71,7 +71,10 @@ resource "aws_security_group" "rds_mysql_sg" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    cidr_blocks = var.public_subnet_cidr_block # replace with your EC2 instance security group CIDR block
+    cidr_blocks = var.public_subnet_cidr_block
+  }
+  tags = {
+    Name = "RDS Security Group"
   }
 }
 
