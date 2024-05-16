@@ -70,6 +70,7 @@ pipeline {
                             dir('infra') {
                                 sh 'echo "=================Terraform Destroy=================="'
                                 sh 'terraform destroy -auto-approve'
+                                sh 'terraform output -json public_ip > /var/lib/jenkins/output.txt'
                             }
                         }
                     }
