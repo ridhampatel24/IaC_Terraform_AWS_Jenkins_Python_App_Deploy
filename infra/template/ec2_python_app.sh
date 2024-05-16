@@ -3,6 +3,7 @@
 cd /home/ubuntu
 yes | sudo apt update
 yes | sudo apt install python3 python3-pip
+sudo apt install net-tools -y
 git clone https://github.com/ridhampatel24/demo_python_app.git
 sleep 20
 cd /home/ubuntu/demo_python_app
